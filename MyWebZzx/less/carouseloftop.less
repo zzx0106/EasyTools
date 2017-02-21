@@ -1,0 +1,117 @@
+@banner_h: 277px;
+@sum_w: 1200px;
+.banner-box {
+    position: relative;
+    margin: 0 auto;
+    width: @sum_w;
+    height: @banner_h;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+.banner-box-left {
+    left: 0;
+    opacity: 1;
+    top: 20px;
+    width: 667px;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    box-shadow: rgba(7, 17, 27, 0.2) 8px 0 16px 0;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+@banner_box_center_left: 204px;
+@banner_box_center_w: 800px;
+.banner-box-center {
+    left: @banner_box_center_left;
+    opacity: 1;
+    top: 0;
+    width: @banner_box_center_w;
+    z-index: 2;
+    display: block;
+    position: absolute;
+    box-shadow: rgba(7, 17, 27, 0.4) 12px 0 24px 0;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+.banner-box-right {
+    left: 533px;
+    opacity: 1;
+    top: 20px;
+    width: 667px;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    box-shadow: rgba(7, 17, 27, 0.2) 8px 0 16px 0;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+@img_h: 240px;
+/*图片高度*/
+.banner-download {
+    @banner_download_h: 40px;
+    @banner_download_w: 575px;
+    display: block;
+    width: @banner_download_w;
+    height: @banner_download_h;
+    margin: 0 auto;
+    padding-left: 25px;
+    z-index: 3;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: #D84C29;
+    line-height: @banner_download_h - 5px;
+    font-family: "微软雅黑";
+    text-align: center;
+    border: 2px solid rgba(238,99,42,0.7);
+    border-radius: 5px;
+}
+.banner-dots {
+    margin: 15px auto;
+    position: relative;
+    width: 1200px;
+    text-align: center;
+    li {
+        display: inline-block;
+        zoom: 1;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 12px;
+        background-color: #252525;
+        transition: transform 0.2s;
+        cursor: pointer;
+        border: 2px solid #CCCCCC;
+    }
+}
+.active {
+    border: 2px solid #a8acaf !important;
+    background-color: #ffffff !important;
+    transition: transform 0.4s;
+}
+.next {
+    position: absolute;
+    right: 0;
+    background-image: url("../img/pre.png");
+    background-position: center;
+}
+.prev {
+    position: absolute;
+    background-image: url("../img/pre.png");
+    background-position: center;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.banner-anchor {
+    position: absolute;
+    top: 26%;
+    height: 80px;
+    width: 40px;
+    overflow: hidden;
+    text-indent: -90em;
+    background-repeat: no-repeat;
+    z-index: 10;
+}

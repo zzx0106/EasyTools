@@ -1,0 +1,27 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "bootstrap/css/bootstrap.min.css",
+      "Font-Awesome-3.2.1/Font-Awesome-3.2.1/css/font-awesome.min.css",
+      "css/main.css",
+      "css/nav.css",
+      "css/carouseloftop.css",
+      "css/mainbody.css",
+      "css/footerstyle.css",
+      "bootstrap/js/bootstrap.min.js",
+      "js/nav.js",
+      "img/coverbg.jpg",
+      "js/carouseloftop.js",
+      "js/cont.js",
+      "data/coursewarp.json",
+      "js/mainbody.js",
+      "data/fasttool.json",
+      "img/androidbg.jpg",
+      "img/html5bg.jpg",
+      "img/iosbg.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}

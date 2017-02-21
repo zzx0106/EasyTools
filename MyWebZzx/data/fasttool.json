@@ -1,0 +1,124 @@
+[{
+	"title":"Android开发",
+	"include":[{
+		"name":"AndroidSDK",
+		"content":"用于android开发的软件开发工具包",
+		"version":"v24.4.1",
+		"url":"http://111.23.10.46/cache/dl.google.com/android/android-sdk_r24.4.1-windows.zip?ich_args2=23-21122100065150_e8bbf13a36e4bb3f15cc9f753748f33c_10001002_9c886c2bd1c6f1d99e33518939a83798_ee8d9b3929bd303243b1800cb020b189"
+	},
+	{
+		"name":"AndroidStudio",
+		"content":"android开发IDE(开发环境)",
+		"version":"v2.2.2.0",
+		"url":"https://dl.google.com/dl/android/studio/ide-zips/2.2.2.0/android-studio-ide-145.3360264-windows.zip"
+	},
+	{
+		"name":"Genymotion",
+		"content":"android开发最实用最快捷模拟器，但必须注册才能下载",
+		"version":"点击打开网站",
+		"url":"http://www.genymotion.net/"
+	},
+	{
+		"name":"Picasso",
+		"content":"一款便捷式异步加载处理以及缓存图片的实用工具",
+		"version":"v2.5.2",
+		"url":"https://codeload.github.com/square/picasso/zip/master"
+	},
+	{
+		"name":"AndroidWiFiADB",
+		"content":"使用过的都知道用Wifi调试App，绝对的好东西",
+		"version":"v2.0.0",
+		"url":"https://codeload.github.com/pedrovgs/AndroidWiFiADB/zip/master"
+	},
+	{
+		"name":"GsonFormat",
+		"content":"根据服务端传回的api做自动化解析并处理",
+		"version":"v1.2.2",
+		"url":"https://codeload.github.com/zzz40500/GsonFormat/zip/master"
+	},
+	{
+		"name":"Leakcanary",
+		"content":"帮助你在开发阶段方便的检测出内存泄露的问题，使用起来更简单方便",
+		"version":"v2.0.0",
+		"url":"https://codeload.github.com/square/leakcanary/zip/master"
+	},
+	{
+		"name":"AndroidKiller",
+		"content":"android逆向反编译工具，帮你快速破解app",
+		"version":"v1.3.1",
+		"url":"http://cl.zasuv.com/download/%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E9%80%86%E5%90%91%E5%B7%A5%E5%85%B7_31@105121.exe"
+	}]
+},
+{
+	"title":"Web前端开发",
+	"include":[{
+		"name":"SublimeText3",
+		"content":"一款具有代码高亮、语法提示、自动完成且反应快速的编辑器软件,支持插件扩展机制。",
+		"version":"v3.12.6",
+		"url":"https://download.sublimetext.com/Sublime%20Text%20Build%203126%20x64%20Setup.exe"
+	},
+	{
+		"name":"WebStorm",
+		"content":"与Androidstudio同属于jetbrains公司，是一款简洁高效，同时功能强大的前端开发IED",
+		"version":"v12.0.0",
+		"url":"http://pan.baidu.com/s/1i41wF69#list/path=%2F"
+	},
+	{
+		"name":"Hbuilder",
+		"content":"专为前端打造的开发工具，具有飞一样的编码、最全的语法库和浏览器兼容数据,可以方便的制作手机APP。",
+		"version":"v7.6.2",
+		"url":"http://111.23.10.51/cache/sw.bos.baidu.com/sw-search-sp/software/8f500d231187e/HBuilder.7.6.2.windows.zip?ich_args2=109-21125511028248_8665ca32c09ea384ccc391e610aac25d_10068001_9c886c2bd1c6f3d89438518939a83798_2ce295087078b93f31aa8db9c253b91a"
+	},
+	{
+		"name":"PhotoShop CS6",
+		"content":"一款集合了图像扫描、编辑修改、图像制作、广告创意，图像输入与输出于一体的图形图像处理软件",
+		"version":"v13.0.0.0",
+		"url":"http://111.23.10.44/cache/sw.bos.baidu.com/sw-search-sp/software/c07cde08ce4/Photoshop_CS6.exe?ich_args2=114-21125900047899_7fdf30ee39ff35cadfbea97700f88f35_10068001_9c886c2bd1c6f2d0903e518939a83798_e2c82315d24a3797a9a60740a0fc9398"
+	},
+	{
+		"name":"Can I use",
+		"content":"在这里你能了解所有方法以及参数在全球各个浏览器中使用情况",
+		"version":"点击打开网页",
+		"url":"http://caniuse.com/"
+	},
+	{
+		"name":"Tree.js",
+		"content":"three.js是JavaScript编写的WebGL第三方库。提供了非常多的3D显示功能。",
+		"version":"v4.6.2.0",
+		"url":"https://codeload.github.com/mrdoob/three.js/zip/master"
+	}]
+},
+{
+	"title":"IOS开发",
+	"include":[{
+		"name":"AppCode",
+		"content":"与Androidstudio同属于jetbrains公司，是一款简洁高效，同时功能强大的IOS集成开发工具(IED)",
+		"version":"v3.0.2",
+		"url":"https://download.jetbrains.8686c.com/objc/AppCode-2016.3.2.dmg"
+	},
+	{
+		"name":"Xcode",
+		"content":"运行在操作系统Mac OS X上的集成开发工具(IED)",
+		"version":"v8.2.0",
+		"url":"https://pan.baidu.com/s/1nvPPNLn#list/path=%2F"
+	},
+	{
+		"name":"XAlign",
+		"content":"一个 Xcode 的实用插件，用于对齐规范代码而且还可以自定义任意你想要的格式。",
+		"version":"v10.12",
+		"url":"https://codeload.github.com/qfish/XAlign/zip/master"
+	},
+	{
+		"name":"KSImageNamed-Xcode",
+		"content":"用于根据图像名称快速选择图片的插件",
+		"version":"v1.0.0",
+		"url":"https://codeload.github.com/ksuther/KSImageNamed-Xcode/zip/master"
+	},
+	{
+		"name":"FuzzyAutocompletePlugin",
+		"content":"用于允许使用模糊的方式来进行代码自动补全的插件",
+		"version":"v2.1.1",
+		"url":"https://codeload.github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin/zip/master"
+	}]
+}
+]

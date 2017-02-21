@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@nav_h:70px;
+hr{
+    margin: 0;
+    border: 2px solid #3278B3;
+    color: #3278B3;
+}
+//header{
+//  width: 100%;
+//}
+body{
+    background: rgba(0,0,0,.2);
+}
+.navbar{
+    margin-bottom: 30px;
+    background-color: rgba(0,0,0,0.4);
+    border-color: #000000;
+}
+.cover-box{
+       
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 1s ease-out;
+}
+.nav{
+    background-color: rgba(0,0,0,0.4);
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: #FFFFFF;
+    transition: 1s ease;
+    top: 0;
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+.navchange{
+    opacity: 0;
+    top:-80px;
+    transition: 1s ease;
+}
+.nav_box{
+     width: calc(~"70%");
+    height: 70px;
+    display: block;
+    float: right;
+    height: @nav_h;
+    margin-bottom: 0px;
+    li{
+        .comment_li;
+        a{
+            &:hover{
+                color: #428bca;
+            }
+        }
+    }
+    li+li{
+        border-left:1px solid #CCCCCC;
+    }
+    .comment_li{
+        display: block;
+        width: 25%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        line-height: @nav_h;
+    }
+}
+
+.cover{ 
+    overflow: hidden;
+    margin-bottom: 150px;
+    position: relative;
+    .cover-title{
+        position: absolute;
+        overflow: hidden;
+        .t_E,.t_T{
+            font-size: 100px;
+            color: #FFFFFF;
+            font-family: "黑体";
+            opacity: 0;
+            transition: 1s ease;
+            }
+        .t_asy,.t_ools{
+            font-size: 80px;
+            color: #FFFFFF;
+            font-family: "黑体";
+            opacity: 0;
+            transition: 1s ease;
+        }
+        .cover-content{
+            position: absolute;
+            text-align: center;
+            font-size: 40px;
+            color: #FFFFFF;
+            font-family: "黑体";
+            transition: 1s ease;
+            opacity: 0;
+            width: 100%;
+            bottom: -70px;
+        }
+    }
+    .cover-btn{
+        position: absolute;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 60px;
+        color: #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 30px;
+        font-family: 黑体;
+        bottom: 120px;
+        cursor: pointer;
+        line-height:60px;
+        text-decoration:  none;
+        &:hover{
+            background-color: rgba(129,63,47, 0.4);
+            color: #5CC3F2
+        }
+    }
+}
+
+@media all and (min-width: 100px) and (max-width: 640px) {
+    
+}

@@ -1,0 +1,455 @@
+@sum_h: 40px;
+@window_w: 1200px;
+.bodymain {
+    width: 1200px;
+    margin: 20px auto;
+}
+//新闻资讯标题部分
+.body-hr1 {
+    display: block;
+    width: 200px;
+    height: @sum_h;
+    position: relative;
+    .bd-icon {
+        @icon_height: 35px;
+        position: absolute;
+        width: @icon_height;
+        height: @icon_height;
+        display: block;
+        background: url("../img/news.png");
+        margin: (@sum_h - @icon_height)/2 auto;
+    }
+    .bd-title {
+        width: auto;
+        display: block;
+        height: @sum_h;
+        margin-left: 45px;
+        a {
+            color: #222;
+            text-decoration: none;
+            &:hover {
+                color: #00a1d6;
+            }
+        }
+        h2 {
+            font-size: 27px!important;
+            line-height: @sum_h;
+            font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+            font-weight: normal;
+        }
+    }
+}
+//新闻标题主体部分
+.cont {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    .course-wrap {
+        float: left;
+        margin: 10px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+        position: relative;
+        .course-box {
+            @course_box_w: (@window_w - 80)/4;
+            @course_box_h: (172/220)*@course_box_w;
+            width: @course_box_w;
+            height: @course_box_h;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+            &:hover .course-intro {
+                opacity: 0.9;
+                top: 0;
+            }
+            img {
+                width: 280px;
+                height: 160px;
+//              width: 100%; //              height: 150px;
+            }
+            .course-intro {
+                box-sizing: border-box;
+                position: absolute;
+                padding: 0 20px;
+                transition: 0.7s;
+                top: 130px;
+                height: @course_box_h;
+                opacity: 0;
+                width: 100%;
+                background-color: #FFFFFF;
+                .course-intro-title {
+                    display: block;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: "微软雅黑";
+                    width: auto;
+                    margin: 5px auto;
+                }
+                span {
+                    color: #000000;
+                    font-size: 18px;
+                    height: 40px;
+                    font-family: "微软雅黑";
+                    overflow: hidden;
+                    line-height: 20px;
+                }
+            }
+            .course-bottom {
+                position: absolute;
+                padding: 0 20px;
+                bottom: 0;
+                box-sizing: border-box;
+                width: 100%;
+                height: 42px;
+                background-color: #fff;
+                color: #93999f;
+                font-size: 12px;
+                line-height: 36px;
+                h3 {
+                    margin: 0;
+                    font-size: 14px;
+                    font-family: "微软雅黑";
+                    max-height: 40px;
+                    overflow: hidden;
+                    color: #07111b;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}
+//推荐头部
+.bodymain-tj {
+    width: @window_w;
+    margin: 20px auto;
+    .body-hr2 {
+        display: block;
+        width: 200px;
+        height: @sum_h;
+        position: relative;
+        .bd-icon {
+            @icon_height: 35px;
+            position: absolute;
+            width: @icon_height;
+            height: @icon_height;
+            display: block;
+            background: url("../img/tuijian.png");
+            margin: (@sum_h - @icon_height)/2 auto;
+        }
+        .bd-title {
+            width: auto;
+            display: block;
+            height: @sum_h;
+            margin-left: 45px;
+            a {
+                color: #222;
+                text-decoration: none;
+                &:hover {
+                    color: #00a1d6;
+                }
+            }
+            h2 {
+                font-size: 27px!important;
+                line-height: @sum_h;
+                font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+                font-weight: normal;
+            }
+        }
+    }
+}
+@content_tj: 605px;
+//推荐毛玻璃部分
+.body-content-tj {
+    width: @window_w;
+    height: @content_tj;
+    -webkit-filter: blur(1px);
+    /* Chrome, Opera */
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter:blur(1px);
+    position: absolute;
+    background: url("../img/bg-image-2.jpg");
+}
+//推荐主题部分
+.content-tj-main {
+    position: absolute;
+    width: @window_w;
+    height: @content_tj;
+    .tj-title {
+        height: 236px;
+        overflow: hidden;
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 36px;
+            margin-top: 80px;
+            font-weight: bold;
+        }
+        p {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+    }
+    .item {
+        position: absolute;
+        top: 225px;
+        li {
+            border-radius: 8px;
+            position: relative;
+            float: left;
+            top: 20px;
+            box-sizing: border-box;
+            padding-top: 48px;
+            width: 300px;
+            height: 380px;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+            transition: All 0.3s ease-in-out;
+            -webkit-transition: All 0.3s ease-in-out;
+            -moz-transition: All 0.3s ease-in-out;
+            -o-transition: All 0.3s ease-in-out;
+            
+            .item-pic1{
+                .itempic('../img/jinrituijian/koalaico.png');
+            }
+            .item-pic2{
+                .itempic('../img/jinrituijian/albbico.png');
+            }
+            .item-pic3{
+                .itempic('../img/jinrituijian/gulpico.png');
+            }
+            .item-pic4{
+                .itempic('../img/jinrituijian/nodeico.png');
+            }
+            
+            .itempic(@item_pic_url) {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto;
+                display: block;
+                background: #fff url(@item_pic_url) no-repeat center center;
+                background-size: 100% 100%;
+            }
+            
+            .item-info {
+                text-align: center;
+                h3 {
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: white;
+                    margin-top: 16px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: white;
+                    margin-top: 15px;
+                }
+                .info {
+                    font-size: 12px;
+                    color: #93999f;
+                    line-height: 24px;
+                    text-align: left;
+                    margin-top: 20px;
+                    padding: 0 20px;
+                    display: none;
+                }
+                .item-course {
+                    margin: 15px 20px 0;
+                    padding-top: 15px;
+                    border-top: 1px solid #d9dde1;
+                    font-size: 12px;
+                    line-height: 25px;
+                    display: none;
+                }
+            }
+            &:hover {
+                height: 490px;
+                background: #FFFFFF;
+                top: -150px;
+                .item-course {
+                    display: block;
+                }
+                .info {
+                    display: block;
+                    h3 {
+                        background: #101010;
+                    }
+                }
+                .item-info {
+                    h3 {
+                        color: #0F0F0F;
+                    }
+                    p {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    .item li:hover {
+        .item {
+            top: 300px;
+        }
+    }
+}
+//推荐空间填充部分
+.bodymain-fixbox{
+    width: @window_w;
+    height: 604px;
+    background: transparent;
+}
+//快捷通道标题部分
+.bodymain-td{
+    margin-top: @content_tj;
+    width: @window_w;
+    margin: 20px auto;
+    .body-hr3 {
+        display: block;
+        width: 200px;
+        height: @sum_h;
+        position: relative;
+        .bd-icon {
+            @icon_height: 35px;
+            position: absolute;
+            width: @icon_height;
+            height: @icon_height;
+            display: block;
+            background: url("../img/fastway.png");
+            margin: (@sum_h - @icon_height)/2 auto;
+        }
+        .bd-title {
+            width: auto;
+            display: block;
+            height: @sum_h;
+            margin-left: 45px;
+            a {
+                color: #222;
+                text-decoration: none;
+                &:hover {
+                    color: #00a1d6;
+                }
+            }
+            h2 {
+                font-size: 27px!important;
+                line-height: @sum_h;
+                font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+//快捷通道内容部分
+.content-td-main{
+    width: @window_w;
+    margin: 0 auto;
+    overflow: hidden;
+//  item标题
+    .item-title-text{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 15px;
+        background: linear-gradient(to right, rgba(37,37,37,0.9) 55%, rgba(243,245,247,0.4) 95%); /* 标准的语法（必须放在最后） */
+        color: #FFFFFF;
+        border-radius: 5px;
+    }
+    .td-item{
+        @td_item_left:0px;
+        @td_item_h:50px;
+        @td_item_w:@window_w - @td_item_left ;
+        width: @td_item_w;
+        height: @td_item_h;
+        margin-left: @td_item_left;
+        margin-top: 6px;
+        background: #00A1D6;
+        border-radius: 5px;
+        position: relative;
+        transition: 0.6s ease;
+        .item-content{
+            height: @td_item_h;
+            float: left;
+            width: @td_item_w;
+            @td_title_w:(@td_item_w - 10px)*2/10;
+            .td-title{
+                font-size: 20px;
+                float: left;
+                width: @td_title_w;
+                height: @td_item_h;
+                line-height: @td_item_h;
+                margin: 0 0 0 10px;
+                font-family: "微软雅黑";
+                color: #FFFFFF;
+            }
+            .td-p{
+//              覆盖在url上面
+                z-index: 2;
+                float: left;
+                position: absolute;
+                left: @td_title_w + 10px;
+                display: block;
+                width: (@td_item_w - 10px)*7/10;
+                padding-left: 30px;
+                height: @td_item_h;
+                margin: 0;
+                font-family: "微软雅黑";
+                color: #FFFFFF;
+                font-size: 17px;
+                background:#3071A9;
+                line-height: @td_item_h;
+            }
+            
+//          右边url部分
+            .item-url{
+                @url_w:(@td_item_w - 10px)*2/10;
+                position: absolute;
+                right: @url_w/-2;
+                width: @url_w;
+                height: 50px;
+                float: left;
+                z-index:1;
+                transition: 1s ease;
+                .url-time{
+                    background: ##3FB5A6;
+                    display: block;
+                    height: @td_item_h;
+                    width: @url_w/2;
+                    float: left;
+                    font-family: "微软雅黑";
+                    line-height: @td_item_h;
+                    font-size: 15px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                .url{
+                    background: #26B99A;
+                    display: block;
+                    height: @td_item_h;
+                    width: @url_w/2;
+                    float: left;
+                    line-height: @td_item_h;
+                    font-family: "微软雅黑";
+                    font-size: 15px;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+        }
+        }
+        &:hover{
+             .item-url{
+                 right:0
+             }
+        }
+    }
+}
