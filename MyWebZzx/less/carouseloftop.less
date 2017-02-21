@@ -1,6 +1,17 @@
 @banner_h: 277px;
-@sum_w: 1200px;
+@sum_w: 90%;
+
+
+.tabpager{
+    width: 100%;
+}
+//bootstrop轮播图
+#myCarousel{
+    width: 100%;
+    display: none;
+}
 .banner-box {
+    display: block;
     position: relative;
     margin: 0 auto;
     width: @sum_w;
@@ -14,7 +25,7 @@
     left: 0;
     opacity: 1;
     top: 20px;
-    width: 667px;
+    width: 55%;
     display: block;
     z-index: 1;
     position: absolute;
@@ -22,13 +33,13 @@
     transition: 0.3s ease;
     border-radius: 5px;
 }
-@banner_box_center_left: 204px;
-@banner_box_center_w: 800px;
+@banner_box_center_left: 17%;
+@banner_box_center_w: 66%;
 .banner-box-center {
     left: @banner_box_center_left;
     opacity: 1;
     top: 0;
-    width: @banner_box_center_w;
+    width:@banner_box_center_w;
     z-index: 2;
     display: block;
     position: absolute;
@@ -37,10 +48,10 @@
     border-radius: 5px;
 }
 .banner-box-right {
-    left: 533px;
+    left: 44%;
     opacity: 1;
     top: 20px;
-    width: 667px;
+    width: 55%;
     z-index: 1;
     display: block;
     position: absolute;
@@ -71,7 +82,7 @@
 .banner-dots {
     margin: 15px auto;
     position: relative;
-    width: 1200px;
+    width: 30%;
     text-align: center;
     li {
         display: inline-block;
@@ -114,4 +125,22 @@
     text-indent: -90em;
     background-repeat: no-repeat;
     z-index: 10;
+}
+
+@media only screen and (max-width: 800px) {
+    .banner-box{
+        display: none;
+    }
+    .banner-download{
+        display: none;
+    }
+    .banner-dots{
+        display: none;
+    }
+//  bootstrap轮播图
+    #myCarousel{
+        width: 100%;
+        display: block;
+        margin-top: 70px;
+    }
 }

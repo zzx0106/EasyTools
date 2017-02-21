@@ -67,6 +67,7 @@ body {
   line-height: 70px;
 }
 .cover {
+  width: 100%;
   overflow: hidden;
   margin-bottom: 150px;
   position: relative;
@@ -120,4 +121,13 @@ body {
 .cover .cover-btn:hover {
   background-color: rgba(129, 63, 47, 0.4);
   color: #5cc3f2;
+}
+@media all and (max-width: 800px) {
+  .nav_box {
+    width: 100%;
+    float: none;
+  }
+  .cover {
+    display: none;
+  }
 }

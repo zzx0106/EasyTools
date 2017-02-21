@@ -1,7 +1,15 @@
+.tabpager {
+  width: 100%;
+}
+#myCarousel {
+  width: 100%;
+  display: none;
+}
 .banner-box {
+  display: block;
   position: relative;
   margin: 0 auto;
-  width: 1200px;
+  width: 90%;
   height: 277px;
 }
 .banner-box img {
@@ -12,7 +20,7 @@
   left: 0;
   opacity: 1;
   top: 20px;
-  width: 667px;
+  width: 55%;
   display: block;
   z-index: 1;
   position: absolute;
@@ -21,10 +29,10 @@
   border-radius: 5px;
 }
 .banner-box-center {
-  left: 204px;
+  left: 17%;
   opacity: 1;
   top: 0;
-  width: 800px;
+  width: 66%;
   z-index: 2;
   display: block;
   position: absolute;
@@ -33,10 +41,10 @@
   border-radius: 5px;
 }
 .banner-box-right {
-  left: 533px;
+  left: 44%;
   opacity: 1;
   top: 20px;
-  width: 667px;
+  width: 55%;
   z-index: 1;
   display: block;
   position: absolute;
@@ -64,7 +72,7 @@
 .banner-dots {
   margin: 15px auto;
   position: relative;
-  width: 1200px;
+  width: 30%;
   text-align: center;
 }
 .banner-dots li {
@@ -108,4 +116,19 @@
   background-repeat: no-repeat;
   z-index: 10;
 }
-
+@media only screen and (max-width: 800px) {
+  .banner-box {
+    display: none;
+  }
+  .banner-download {
+    display: none;
+  }
+  .banner-dots {
+    display: none;
+  }
+  #myCarousel {
+    width: 100%;
+    display: block;
+    margin-top: 70px;
+  }
+}

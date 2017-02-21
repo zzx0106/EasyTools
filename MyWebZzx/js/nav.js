@@ -27,7 +27,7 @@
     }
 };
 	cover.css({
-		width:windowW,
+		width:'100%',
 		height:windowH
 	})
 	cover.html(

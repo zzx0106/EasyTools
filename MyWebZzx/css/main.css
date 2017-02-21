@@ -1,8 +1,10 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
+html {
+  width: 100%;
+}
 body,
 button,
 input,
@@ -14,11 +16,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Microsoft YaHei, '微软雅黑', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-family: Microsoft YaHei, '微软雅黑', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
-
 hr {
-	margin: 0;
-	border: 2px solid #3278B3;
-	color: #3278B3;
+  margin: 0;
+  border: 2px solid #3278B3;
+  color: #3278B3;
 }

@@ -20,7 +20,6 @@ body{
     border-color: #000000;
 }
 .cover-box{
-       
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
     transition: 1s ease-out;
@@ -71,6 +70,7 @@ body{
 }
 
 .cover{ 
+    width: 100%;
     overflow: hidden;
     margin-bottom: 150px;
     position: relative;
@@ -124,6 +124,12 @@ body{
     }
 }
 
-@media all and (min-width: 100px) and (max-width: 640px) {
-    
+@media all and (max-width: 800px) {
+    .nav_box{
+        width: 100%;
+        float: none;
+    }
+    .cover{
+        display: none;
+    }
 }
