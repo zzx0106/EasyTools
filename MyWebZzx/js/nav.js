@@ -43,7 +43,7 @@
 	'</div>' +
 	'<a class="cover-btn md-xwzx" href="#pagerview">立  即  体  验</a>'+
 	'</div>' +	
-	'<img src="img/coverbg.jpg" width="' + windowW + 'px" height="' + windowH + 'px"  hspace="5" vspace="5" border="0" lowsrc="img/coverbglow.jpg"/>'
+	'<img src="img/coverbglow.jpg" width="' + windowW + 'px" height="' + windowH + 'px"  hspace="5" vspace="5" border="0" lowsrc="img/coverbglow.jpg"/>'
 	)
 	
 	
