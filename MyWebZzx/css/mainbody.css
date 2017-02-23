@@ -43,6 +43,8 @@
 .cont .course-wrap {
   float: left;
   margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
   background-color: #fff;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
@@ -67,6 +69,7 @@
 .cont .course-wrap .course-box .course-intro {
   box-sizing: border-box;
   position: absolute;
+  border-radius: 10px;
   padding: 0 20px;
   transition: 0.7s;
   top: 130px;
