@@ -69,6 +69,7 @@
             img {
                 width: 280px;
                 height: 160px;
+                border-radius: 10px;
 //              width: 100%; //              height: 150px;
             }
             .course-intro {
@@ -85,6 +86,7 @@
                 .course-intro-title {
                     display: block;
                     text-align: center;
+                    line-height: 40px;
                     font-size: 30px;
                     font-family: "微软雅黑";
                     width: auto;
@@ -352,7 +354,7 @@
     }
 }
 
-//快捷通道内容部分
+//快捷通道>800px内容部分
 .content-td-main{
     width: @window_w;
     margin: 0 auto;
@@ -455,4 +457,154 @@
              }
         }
     }
+}
+
+//快捷通道<800px主体部分
+ .content-td-mainlow {
+         width: 100%;
+         height: 80px;
+         display: none;
+   
+        .tool-title {
+            width: 100%;
+            height: 40px;
+        }
+        .tool-box {
+            width: 0;
+            height: 0px;
+            transition: 1s ease;
+            .tool-content {
+                height: 50px;
+                width: 100%;
+                background: #9D9D9D;
+            }
+            .tool-url {
+                width: 100%;
+                .tool-version {
+                    width: 100%;
+                    background: #00A1D6;
+                    height: 30px;
+                    float: left;
+                    height: 30px;
+                    display: block;
+                    opacity: 1;
+                    transition: 1s ease;
+                }
+                .tool-url {
+                    background: #4CAE4C;
+                    width: 100%;
+                    float: left;
+                    height: 0px;
+                    display: none;
+                    opacity: 0;
+                    transition: 1s ease;
+                }
+            }
+        }
+        &:hover{
+           animation:mymove 5s infinite;
+        }
+    }
+
+
+
+@media all and (max-width: 800px) {
+    .bodymain{
+     width: 100%;   
+    }
+//新闻标题主体部分
+.cont {
+    width: 100%;
+    //  新闻主体
+   .course-wrap{
+       float:  none;
+       width: 100%;
+       margin: 10px auto;
+       padding-top: 30px;
+   }
+   // 新闻主题包含内容
+   .course-box{
+       width: 80%;
+       margin: 0 auto;
+   }
+}
+.body-hr1{
+    .bd-title{
+        h2 {
+            font-size: 18px!important;
+            line-height: @sum_h;
+            font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+            font-weight: normal;
+        }
+
+    }
+}
+
+//推荐毛玻璃部分
+   .body-content-tj {
+       display: none;
+   }
+//推荐空间填充部分
+   .bodymain-fixbox {
+       width: 100%;
+   }
+//推荐主题部分
+    //推荐头部
+    .bodymain-tj {
+        width: 100%;
+    }
+    .bodymain-tj .body-hr2 .bd-title h2 {
+        font-size: 18px!important;
+        line-height: 40px;
+        font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+   .content-tj-main {
+       width: 100%;
+       position: relative;
+       .tj-title{
+           display: none;
+       }
+       .item{
+           width: 100%;
+            li{
+              width: 100%;
+              float: none;
+              margin: 0 auto;
+            }
+       }
+ 
+   }
+   .content-td-main{
+       display: none;
+   }
+   
+   //推荐空间填充部分
+    .bodymain-fixbox{
+        width: 100%;
+        height: 1135px;
+        background: transparent;
+    }
+   
+// 快捷通道标题部分
+    .bodymain-td{
+        width: 100%;
+    }
+    .bodymain-td .body-hr3 .bd-title h2 {
+        font-size: 18px!important;
+        line-height: 40px;
+        font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+
+    //快捷通道内容部分>800px隐藏
+   .content-td-main{
+       width: 100%;
+       display: none;
+   }
+    //快捷通道内容部分<800px显示
+    .content-td-mainlow {
+        display: block;
+    }
+   
 }
